@@ -28,7 +28,7 @@ include_once 'validate.php';
         <p id="clientMsg" class="error"></p>
 
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required minlength="2"   maxlength="50" pattern="[a-Za-z/s]+" title=name
+        <input type="text" id="name" name="name" required minlength="2"   maxlength="50" pattern="[a-Za-z/s]+" title="Name should only contain letters and spaces.">
                value="<?php echo htmlspecialchars($name); ?>">
         <span class="error"><?php echo $nameErr; ?></span>
 
